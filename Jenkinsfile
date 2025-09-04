@@ -14,7 +14,7 @@ pipeline {
 
         stage('Set Up Python Virtual Environment') {
             steps {
-                sh 'python3 -m venu venu'
+                sh 'python3 -m venv venv'
                 sh './venv/bin/python -m pip install --upgrad.\\venv\\Scripts\\pip install -r requirements.txte pip'
                 sh './venv/bin/pip install -r requirements.txt'
             }
